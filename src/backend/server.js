@@ -29,6 +29,15 @@ connection.once('open', () =>{
     console.log("MongoDB connection established")
 })
 
+// require -> import
+const userRouter = require('./routes/user_route')
+const eventRouter = require('./routes/event_route')
+
+// app.use -> registering middleware
+// ex: when the user goes to /event in the web page -> eventRouter pulled
+app.use('/event', eventRouter)
+app.use('/user', userRouter)
+
 // start the express server
 app.listen(port, () =>{
     console.log(`Server running on port ${port}`)
