@@ -6,6 +6,7 @@
 // env variables: variables in your system that describe the local environment. The most well known environment variable is probably PATH
 // cors: mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served
 
+// require -> import modules
 const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
