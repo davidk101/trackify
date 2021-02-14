@@ -34,7 +34,7 @@ const userRouter = require('./routes/user_route')
 const eventRouter = require('./routes/event_route')
 
 // app.use -> registering middleware
-// ex: when the user goes to /event in the web page -> eventRouter pulled
+// ex: when the user goes to root/event in the web page -> eventRouter loaded
 app.use('/event', eventRouter)
 app.use('/user', userRouter)
 
