@@ -1,7 +1,7 @@
 const router = require('express').Router() // importing express router
 let User = require('../models/user_model')// importing mongoose model
 
-// endpoint that handles incoming http get requests on /user path
+// endpoint that handles incoming http get requests on /users path
 router.route('/').get((req,res) => {
 
     User.find() // mongoose method that returns list of users from mongoDB

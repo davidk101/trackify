@@ -1,7 +1,7 @@
 // nodemon: restarts node application whenever a change is detected
 // table -> collection && row -> document
-// Mongoose is an Object Data Modelling Library(ODM) for MongoDB and Node.js, providing a higher level of abstraction.
-// It is similar to the relationship between Express and Node, as Express is a layer of abstraction over Node.js while Mongoose is a layer of abstraction over the regular MongoDB driver.
+// mongoose is an Object Data Modelling Library(ODM) for MongoDB and Node.js, providing a higher level of abstraction.
+// it is similar to the relationship between Express and Node, as Express is a layer of abstraction over Node.js while Mongoose is a layer of abstraction over the regular MongoDB driver.
 // middleware: software that provides services to software applications beyond those available from the operating system
 // env variables: variables in your system that describe the local environment. The most well known environment variable is probably PATH
 // cors: mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served
@@ -35,8 +35,8 @@ const eventRouter = require('./routes/event_route')
 
 // app.use -> registering middleware
 // ex: when the user goes to root/event in the web page -> eventRouter loaded
-app.use('/event', eventRouter)
-app.use('/user', userRouter)
+app.use('/events', eventRouter)
+app.use('/users', userRouter)
 
 // start the express server
 app.listen(port, () =>{
