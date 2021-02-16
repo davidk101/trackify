@@ -29,7 +29,7 @@ connection.once('open', () =>{
     console.log("MongoDB connection established")
 })
 
-// require -> import
+// require -> import routes
 const userRouter = require('./routes/user_route')
 const eventRouter = require('./routes/event_route')
 
