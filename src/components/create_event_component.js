@@ -5,6 +5,13 @@ export default class CreateEvent extends Component{
     constructor(props){
         super(props) // super is necessary for constructor definition of subclass
 
+        // ensuring 'this' binds/refers to the correct class i.e. CreateEvent else 'this' will be undefined
+        this.onChangeUsername = this.onChangeUsername.bind(this)
+        this.onChangeDescription = this.onChangeDescription.bind(this)
+        this.onChangeDuration = this.onChangeDuration.bind(this)
+        this.onChangeDate = this.onChangeDate.bind(this)
+        this.onSubmit = this.onSubmit.bind(this)
+
         this.state = { // state is the equivalent to variables to hold data
             username: '',
             description: '',
