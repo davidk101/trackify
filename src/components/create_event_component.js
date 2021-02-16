@@ -12,7 +12,7 @@ export default class CreateEvent extends Component{
         this.onChangeDate = this.onChangeDate.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
-        this.state = { // state is the equivalent to variables to hold data
+        this.state = { // state is the equivalent of public variables store date accessed within this class
             username: '',
             description: '',
             duration: 0,
@@ -20,6 +20,15 @@ export default class CreateEvent extends Component{
             users: []
 
         }
+    }
+
+    // LIFECYCLE METHOD: loaded right before this page loads
+    // temporary hard-code until loaded from DB
+    componentDidMount(){
+        this.setState({
+            users: ['test user'],
+            username: 'test user'
+        })
     }
 
     // updating elements within the state
