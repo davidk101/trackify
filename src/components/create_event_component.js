@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
 
 export default class CreateEvent extends Component{
 
@@ -73,7 +75,7 @@ export default class CreateEvent extends Component{
 
         console.log(event)
 
-        window.location = '/' // taking user back to homepage PATH
+        window.location = '/' // taking user back to landing page PATH
     }
 
     render(){
